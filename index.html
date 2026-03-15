@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まるの おさんぽびより — 絵本公式サイト</title>
+  <meta name="description" content="子犬のまると飼い主の何気ない一日を描いた心温まる絵本『まるの おさんぽびより』公式サイト。">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="まるの おさんぽびより">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="まるの おさんぽびより — 心温まる絵本">
+  <meta property="og:description" content="子犬のまると飼い主の何気ない一日を描いた絵本。きょうは、まるが いちばん かがやく ひ。">
+  <meta property="og:url" content="https://tsumita2929.github.io/maru-osanpo-biyori/">
+  <meta property="og:image" content="https://tsumita2929.github.io/maru-osanpo-biyori/images/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="まるの おさんぽびより — 心温まる絵本">
+  <meta name="twitter:description" content="子犬のまると飼い主の何気ない一日を描いた絵本。きょうは、まるが いちばん かがやく ひ。">
+  <meta name="twitter:image" content="https://tsumita2929.github.io/maru-osanpo-biyori/images/ogp.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" class="header__logo-icon">
+          <circle cx="16" cy="14" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+          <circle cx="20" cy="12" r="1.5" fill="currentColor"/>
+          <ellipse cx="16" cy="16" rx="3" ry="2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M8 8 Q6 2 10 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 8 Q26 2 22 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="header__logo-text">まるの おさんぽびより</span>
+      </a>
+      <nav class="header__nav" id="mainNav" aria-label="メインナビゲーション">
+        <a href="#about" class="header__nav-link" data-section="about">絵本について</a>
+        <a href="#story" class="header__nav-link" data-section="story">ストーリー</a>
+        <a href="#gallery" class="header__nav-link" data-section="gallery">ギャラリー</a>
+        <a href="#author" class="header__nav-link" data-section="author">著者</a>
+        <a href="#purchase" class="header__nav-link header__nav-link--cta" data-section="purchase">購入する</a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="images/hero.png" alt="" class="hero__bg-img" loading="eager">
+        <div class="hero__bg-overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">A Picture Book for Everyone</p>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-jp">まるの</span>
+          <span class="hero__title-jp">おさんぽびより</span>
+        </h1>
+        <p class="hero__tagline reveal">きょうは、まるが いちばん かがやく ひ。</p>
+        <div class="hero__actions reveal">
+          <a href="#about" class="btn btn--primary">絵本を見る</a>
+          <a href="#purchase" class="btn btn--outline">購入する</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="1" width="14" height="22" rx="7" />
+          <line x1="8" y1="6" x2="8" y2="10" stroke-linecap="round">
+            <animate attributeName="y1" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="y2" values="10;12;10" dur="1.5s" repeatCount="indefinite"/>
+          </line>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image reveal--slide-left">
+            <img src="images/about-book.png" alt="絵本を見つめる子犬のイラスト" loading="lazy">
+          </div>
+          <div class="about__text">
+            <p class="section-eyebrow reveal">About the Book</p>
+            <h2 class="section-title reveal">子犬と飼い主の<br>なにげない一日</h2>
+            <p class="about__desc reveal">
+              ある晴れた朝、子犬のまるは飼い主と一緒にいつものお散歩に出かけます。
+              公園の芝生、川辺の風、知らない匂いのする路地裏——。
+              まるにとっては、毎日がとくべつな冒険です。
+            </p>
+            <p class="about__desc reveal">
+              水彩画で描かれたやさしい世界の中で、
+              まるは走って、匂いをかいで、たくさんの「はじめて」に出会います。
+              読み終わったあと、きっとあなたも散歩に出かけたくなる——そんな一冊です。
+            </p>
+            <dl class="about__meta reveal">
+              <div class="about__meta-item">
+                <dt>著者</dt>
+                <dd>藤田 陽介</dd>
+              </div>
+              <div class="about__meta-item">
+                <dt>イラスト</dt>
+                <dd>森下 あおい</dd>
+              </div>
+              <div class="about__meta-item">
+                <dt>ページ数</dt>
+                <dd>32ページ</dd>
+              </div>
+              <div class="about__meta-item">
+                <dt>対象年齢</dt>
+                <dd>3歳から</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story" id="story">
+      <div class="container">
+        <p class="section-eyebrow section-eyebrow--center reveal">Story</p>
+        <h2 class="section-title section-title--center reveal">まるの一日</h2>
+        <p class="story__lead reveal">
+          朝の光が差し込む窓辺で、まるのとくべつな一日がはじまります。
+        </p>
+        <div class="story__timeline">
+          <div class="story__chapter reveal">
+            <span class="story__chapter-num">01</span>
+            <div class="story__chapter-content">
+              <h3 class="story__chapter-title">あさの ひかり</h3>
+              <p class="story__chapter-text">
+                カーテンの隙間から差し込む朝日。まるは大きなあくびをして、
+                しっぽをゆらゆら。今日はなんだか、いつもと違う気がする。
+              </p>
+            </div>
+          </div>
+          <div class="story__chapter reveal">
+            <span class="story__chapter-num">02</span>
+            <div class="story__chapter-content">
+              <h3 class="story__chapter-title">はじめての こうえん</h3>
+              <p class="story__chapter-text">
+                連れていかれた先は、見たこともない広い公園。
+                風にのる花の匂い、チョウチョの舞い、芝生のやわらかさ。
+                まるの冒険がはじまる。
+              </p>
+            </div>
+          </div>
+          <div class="story__chapter reveal">
+            <span class="story__chapter-num">03</span>
+            <div class="story__chapter-content">
+              <h3 class="story__chapter-title">あたらしい ともだち</h3>
+              <p class="story__chapter-text">
+                ベンチの近くで出会った大きな犬。
+                最初はこわかったけど、鼻と鼻をくっつけたら、
+                しっぽが止まらなくなった。
+              </p>
+            </div>
+          </div>
+          <div class="story__chapter reveal">
+            <span class="story__chapter-num">04</span>
+            <div class="story__chapter-content">
+              <h3 class="story__chapter-title">かえりみち</h3>
+              <p class="story__chapter-text">
+                夕焼けの帰り道。大好きな人の隣で、まるは静かに目を閉じる。
+                とくべつな一日は、いつもの温もりで終わる。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <p class="section-eyebrow section-eyebrow--center reveal">Gallery</p>
+        <h2 class="section-title section-title--center reveal">絵本の世界</h2>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--wide reveal--scale-up">
+            <img src="images/maru-park.png" alt="広い芝生の上に座る子犬の水彩イラスト" loading="lazy">
+            <div class="gallery__caption">第2章「はじめての こうえん」より</div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="images/maru-play.png" alt="花畑を駆け回る子犬の水彩イラスト" loading="lazy">
+            <div class="gallery__caption">第3章「あたらしい ともだち」より</div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="images/maru-sleep.png" alt="窓辺で眠る子犬の水彩イラスト" loading="lazy">
+            <div class="gallery__caption">第4章「かえりみち」より</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+      <div class="container">
+        <blockquote class="quote reveal">
+          <p class="quote__text">
+            犬と暮らしていると、<br class="sp-only">毎日が「とくべつ」に変わる。<br>
+            この絵本は、そんな<br class="sp-only">小さな気づきから生まれました。
+          </p>
+          <cite class="quote__cite">—— 藤田 陽介（著者）</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Author -->
+    <section class="author" id="author">
+      <div class="container">
+        <div class="author__grid">
+          <div class="author__text">
+            <p class="section-eyebrow reveal">Author</p>
+            <h2 class="section-title reveal">藤田 陽介</h2>
+            <p class="author__role reveal">絵本作家 / エッセイスト</p>
+            <p class="author__bio reveal">
+              東京都出身。多摩美術大学卒業後、デザイン会社勤務を経て絵本作家に転身。
+              愛犬との暮らしを題材にしたエッセイ『犬と朝ごはん』で注目を集める。
+              「日常の中にある小さな幸せ」をテーマに、
+              子どもから大人まで楽しめる作品を発表し続けている。
+            </p>
+            <p class="author__bio reveal">
+              本作は、保護犬を迎えた自身の体験がきっかけ。
+              「犬の目線で世界を見たら、
+              全てが新鮮で、全てがとくべつに見えた」と語る。
+              イラストを担当した森下あおいとは大学時代からの友人。
+            </p>
+          </div>
+          <div class="author__visual reveal--slide-right">
+            <div class="author__visual-frame">
+              <img src="images/maru-sleep.png" alt="子犬が眠る水彩イラスト" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purchase -->
+    <section class="purchase" id="purchase">
+      <div class="container">
+        <p class="section-eyebrow section-eyebrow--center reveal">Purchase</p>
+        <h2 class="section-title section-title--center reveal">絵本を手にとる</h2>
+        <p class="purchase__lead reveal">
+          全国の書店・オンラインストアにてお求めいただけます。
+        </p>
+        <div class="purchase__cards">
+          <div class="purchase__card reveal">
+            <div class="purchase__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3 class="purchase__card-title">書店で購入</h3>
+            <p class="purchase__card-text">
+              全国の書店にて好評発売中。<br>
+              特設コーナーを設けている店舗もございます。
+            </p>
+            <p class="purchase__card-price">¥1,540<span>（税込）</span></p>
+          </div>
+          <div class="purchase__card purchase__card--featured reveal">
+            <div class="purchase__card-badge">おすすめ</div>
+            <div class="purchase__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </div>
+            <h3 class="purchase__card-title">オンラインで購入</h3>
+            <p class="purchase__card-text">
+              各種オンライン書店にてご購入いただけます。送料無料でお届け。
+            </p>
+            <p class="purchase__card-price">¥1,540<span>（税込・送料無料）</span></p>
+          </div>
+          <div class="purchase__card reveal">
+            <div class="purchase__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="purchase__card-title">電子書籍</h3>
+            <p class="purchase__card-text">
+              各種電子書籍ストアにて<br>
+              配信中。
+            </p>
+            <p class="purchase__card-price">¥1,200<span>（税込）</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__cta">
+      <div class="container">
+        <a href="#purchase" class="footer__cta-link">
+          <span class="footer__cta-text">まるに会いにいく</span>
+          <svg class="footer__cta-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-name">まるの<br>おさんぽびより</p>
+            <p class="footer__brand-tagline">きょうは、まるが いちばん かがやく ひ。</p>
+            <div class="footer__social">
+              <a href="https://x.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                </svg>
+                <span>X (Twitter)</span>
+              </a>
+              <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav" aria-label="フッターナビゲーション">
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">絵本</h3>
+              <a href="#about" class="footer__nav-link">絵本について</a>
+              <a href="#story" class="footer__nav-link">ストーリー</a>
+              <a href="#gallery" class="footer__nav-link">ギャラリー</a>
+            </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">購入</h3>
+              <a href="#purchase" class="footer__nav-link">書店で購入</a>
+              <a href="#purchase" class="footer__nav-link">オンライン</a>
+              <a href="#purchase" class="footer__nav-link">電子書籍</a>
+            </div>
+            <div class="footer__nav-group">
+              <h3 class="footer__nav-title">情報</h3>
+              <a href="#author" class="footer__nav-link">著者について</a>
+              <a href="#top" class="footer__nav-link">トップに戻る</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">&copy; 2025 まるの おさんぽびより. All rights reserved.</p>
+        <button class="footer__back-to-top" id="backToTop" aria-label="ページの先頭に戻る">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+          Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
